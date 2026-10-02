@@ -1,0 +1,17 @@
+name = "hex-ecpp"
+defaultTargets = ["HexECPP"]
+leanOptions = [
+  { name = "doc.verso", value = true },
+  { name = "doc.verso.suggestions", value = false },
+]
+[[require]]
+name = "HexArith"
+git = "https://github.com/leanprover/hex-arith.git"
+rev = "v0.6.0"
+[[require]]
+name = "HexPrimality"
+git = "https://github.com/leanprover/hex-primality.git"
+rev = "v0.6.0"
+[[lean_lib]]
+name = "HexECPP"
+precompileModules = true
